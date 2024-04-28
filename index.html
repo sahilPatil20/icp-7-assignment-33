@@ -20,6 +20,43 @@
         destinations.shift();
         console.log(`After unshift() :${destinations}`);
 
+        //indexof
+        const index=destinations.indexOf("europe");
+        console.log(`The index of'aditi' is ${index}`);
+        //splice remove elements
+        destinations.splice(2,4);
+        console.log(destinations);
+        //splice add elements
+        destinations.splice(2,0,"aurtia","madrid","barcelona","rome");
+        console.log(destinations);   
+        //includes test cases
+        const check1=destinations.includes("norway");
+        console.log(check1);
+        const check2=destinations.includes("paris");
+        console.log(check2);
+
+        //check type
+        const type1=typeof(destinations);
+        console.log(`By typeof method the type of ${type1}.`);
+        const type2=Array.isArray(destinations);
+        console.log(`Array.isArray method tells that names is ${type2}.`);
+        //reverse
+        destinations.reverse();
+        console.log("The reversed array is",destinations);
+        //sort ascending
+        destinations.sort();
+        console.log(destinations);
+        //sort descending
+        destinations.sort().reverse();
+        console.log(destinations);
+        //join
+        let names1=destinations.join();
+        console.log(names1);
+        //changing seprator in join
+        let names2=destinations.join("#");
+        console.log(names2);
+
+
 
     </script>
 </body>
